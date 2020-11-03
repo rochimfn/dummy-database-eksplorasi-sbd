@@ -43,7 +43,7 @@ CREATE TABLE Penjualan (
 	PenjualanId int unsigned NOT NULL AUTO_INCREMENT,
 	ProdukId int unsigned NOT NULL,
 	PelangganId int unsigned NOT NULL,
-	PenjualanJumlah int NOT NULL,
+	PenjualanJumlah int unsigned NOT NULL,
 	PRIMARY KEY(PenjualanId),
 	FOREIGN KEY (ProdukId) REFERENCES Produk(ProdukId),
 	FOREIGN KEY (PelangganId) REFERENCES Pelanggan(PelangganId)
